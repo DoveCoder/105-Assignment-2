@@ -1,0 +1,76 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-image: linear-gradient(135deg, #777, #111);
+}
+
+header {
+    position: relative;
+    background-image: linear-gradient(rgb(204, 133, 0), #777);
+    height: 200px;
+    text-align: right;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 5vw)
+    );
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    color: white;
+}
+
+section {
+    margin-top: -5vw;
+}
+
+header a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 100px 0;
+    color: white;
+    font-size: 22px;
+}
+
+header a:hover {
+    font-weight: 800;
+    color: black;
+}
+
+.capture-form {
+    background-color: #e1e1e1;
+    border: 1px solid #cccccc;
+    width: 80%;
+    margin: 1rem auto;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+div.control {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+}
+.control label {
+    flex-basis: 8rem;
+    text-align: right;
+    margin-right: 1rem;
+}
+.control input, .control select {
+    flex-basis: 20rem;
+    padding: 5px;
+}
+
+#btn-save {
+    padding: 1rem;
+    background-color: #d66903;
+    color: #e1e1e1;
+    border: none;
+    border-radius: 5px;
+}
